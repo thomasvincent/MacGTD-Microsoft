@@ -28,6 +28,25 @@ Quickly capture thoughts, ideas, and tasks into your Microsoft To Do inbox witho
 
 Each workflow is documented with usage instructions within the Automator interface.
 
+## Testing
+
+This project includes comprehensive test coverage:
+
+- **Unit Tests**: Validate the structure and syntax of the workflow files
+- **Integration Tests**: Simulate running the workflows with various inputs
+- **Fallback Tests**: Verify web fallback when native app is not available
+- **CI/CD**: GitHub Actions workflow automatically runs tests on push/PR
+
+To run tests locally:
+
+```bash
+cd tests
+./test_workflow.sh     # Run unit tests
+./integration_test.sh  # Run integration tests
+```
+
+See the [tests/README.md](tests/README.md) file for more details on testing.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
