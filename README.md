@@ -23,12 +23,27 @@ Quickly capture thoughts, ideas, and tasks into your Microsoft To Do inbox witho
 1. Clone this repository
 2. Double-click on the workflow files to install them in Automator
 3. Optional: Assign keyboard shortcuts to workflows in System Preferences > Keyboard > Shortcuts > Services
+4. Set up Git hooks: `./setup-hooks.sh`
 
 ## Usage
 
 Each workflow is documented with usage instructions within the Automator interface.
 
-## Testing
+## Development
+
+### Git Hooks
+
+This repository includes Git hooks to ensure code quality:
+
+- **Pre-commit hook**: Validates workflow files, checks XML syntax, and runs tests
+
+To install the hooks, run:
+
+```bash
+./setup-hooks.sh
+```
+
+### Testing
 
 This project includes comprehensive test coverage:
 
